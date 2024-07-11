@@ -1,6 +1,7 @@
-console.log("prova index.js da src");
+
 
 import axios from "axios";
+import "../css/style.css";
 
 
 document.addEventListener('DOMContentLoaded', () => {
