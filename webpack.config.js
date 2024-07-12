@@ -23,16 +23,22 @@ module.exports={
                     MiniCssExtractPlugin.loader,'css-loader'
                 ]
             },
+            {
+                test:/.(png|svg|jpg|jpeg|gif|ico)$/i,
+                type:'asset/resource',
+            }
         ]
     },
     plugins:[
         new htmlWebpackPlugin({
             template: './src/index.html',
-            filename:'index.html'
+            filename:'index.html',
+            favicon:'./src/img/favicon-32x32.png'
         }),
         new MiniCssExtractPlugin({
             filename:'style.css',
         }),
+
     ],
     devServer:{
         contentBase:
