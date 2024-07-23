@@ -1,7 +1,10 @@
-
-
 import axios from "axios";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../css/style.css";
+import '@popperjs/core';
+import 'bootstrap';
+import _ from 'lodash';
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
